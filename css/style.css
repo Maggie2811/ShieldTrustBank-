@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px 20px;
+  }
+
+  /* Header and Navigation */
+header {
+    background-color: #f0f0f5;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+    
+  }
+
+  header .logo {
+    /*text-align: center;*/
+    font-size: 2rem;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #6266d3;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: start;
+  }
+  
+  .nav-links li a:hover {
+    
+    color: rgb(103, 81, 81);
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    background-color: #b6d0e3;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #169f74;
+}
+
+  .hero {
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  /* Container for containerhead and purpose and text */
+.aim{
+    padding: 10px;
+    margin: 50px 0px;
+}
+  .containerhead {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between; /* Space between video and text */
+    gap: 20px;
+    padding: 20px;
+}
+.head h1 {
+    color: #6266d3;
+    font-size: 45px;
+    text-align: center;
+}
+/* Video section */
+.video {
+    flex: 1;
+    min-width: 300px; /* Ensures video has a minimum width */
+}
+
+/* Text section */
+.purpose {
+    font-size: large;
+    flex: 1;
+    min-width: 300px; /* Ensures text has a minimum width */
+    padding: 20px;
+}
+
+/* Make the video responsive */
+video {
+    max-width: 100%; /* Ensures the video scales responsively */
+    height: auto;
+}
+
+
+  /*container for summary*/
+.container {
+    background-color: #6266d3;
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust based on screen width */
+    gap: 10px; /* Optional gap between items */
+  }
+  .text p i{
+    color: #f0f0f5;
+    font-size: 40px;
+  }
+  .text {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    
+}
+.text p a {
+    color: #f9f9f9;
+    text-decoration: none;
+    display: block;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #6266d3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-links ul {
+    list-style: none;
+  }
+  
+  footer .footer-links ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  footer .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+
+
+  /*Responsiveness*/
+  @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .nav-links a {
+        padding: 12px;
+    }
+  }
+    @media screen and (max-width: 768px) {
+        .hero {
+            flex-direction: column; /* Stack vertically */
+        }
+    
+        .hero h2 {
+            font-size: 4vw; /* Increase font size on small screens */
+        }
+    
+        .hero p {
+            font-size: 3vw; /* Increase font size on small screens */
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .hero h2 {
+            font-size: 3vw; /* Further adjust for very small screens */
+        }
+    
+        .hero p {
+            font-size: 2vw; /* Further adjust for very small screens */
+        }
+    }
+
+    /* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+       .containerhead {
+        flex-direction: column; /* Stack video and text on top of each other */
+    }
+
+    .purpose {
+        padding-top: 20px; /* Adds spacing between video and text when stacked */
+    }
+   } 
+
+/*  container text*/
+    @media (max-width: 600px) {
+        .container {
+          flex-direction: column; /* Stack items vertically on small screens */
+        }
+        
+        .text {
+          width: 100%; /* Make each text block take full width */
+        }
+}
