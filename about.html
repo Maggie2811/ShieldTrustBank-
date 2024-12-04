@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main>
+        <section class="image-section">
+            <img src="images/stb_About.webp" alt="Microfinance Bank" class="section-image">
+        </section>
+
+        <div class="container-about">
+            <h1>About STMB Bank</h1>
+            <p>STMB Bank is a forward-thinking microfinance institution dedicated to providing affordable, accessible, and 
+                sustainable financial services to underserved individuals, small businesses, and entrepreneurs. As a 
+                microfinance bank, we focus on offering small loans, savings products, and financial education to underserved 
+                populations, helping them build a better future.
+            </p>
+            <p>
+                Founded in 2010, [Bank Name] was established with the belief that access to financial services can drive positive change in underserved communities. Our journey began with a small group of passionate individuals committed to providing microloans to aspiring entrepreneurs who struggled to get credit from traditional banks.
+            </p>
+            <p>Over the years, we’ve expanded our services to include savings accounts, insurance products, and financial education programs, reaching thousands of customers across [Country/Region]. With a focus on empowering small businesses, we’ve helped our clients grow and create lasting change in their communities.</p>
+            <p>
+                Our mission is to promote financial inclusion and economic growth by supporting entrepreneurs, farmers, and 
+                small business owners with the tools they need to succeed. Whether it's starting a business, growing a 
+                farm, or simply improving personal financial stability, we are here to make a difference.
+            </p>
+            <p>We believe in the power of community-driven development and work to create lasting impacts through sustainable 
+                financial solutions. Our innovative approach is designed to make banking simple, affordable, and accessible to 
+                everyone, regardless of their income or background.
+            </p>
+            <p>We work with local partners to develop and scale responsible digital financial solutions for underserved people 
+                globally, so they can make informed decisions and improve their lives
+            </p>
+            <p>
+                By choosing Shield Trust Microfinance Bank, you're not just securing financial services — you're becoming part of a movement that 
+                fosters inclusive growth and self-reliance. Together, we can create a more equitable and prosperous future for 
+                all.
+            </p>         
+        </div>
+
+        <section class="background-section">
+            <div class="content">            
+                <p>We find and help build innovative companies with the potential to reach large numbers of underserved people and accelerate their growth by investing capital and providing strategic governance and advice.</p>
+            </div>
+        </section>
+        <section class="background-section" style="background-image: url('images/smb\ pic2.webp');">
+            <div class="content">
+                <p>We work with partners to create affordable digital solutions that build clients’ financial health and well-being. Accion Advisory leverages expertise in digital technologies to design, test, and deploy new financial products and services. </p>
+            </div>
+        </section>
+        <section class="background-section" style="background-image: url('images/history4.jpg');">
+            <div class="content">            
+                <p>We conduct in-depth research and share our learnings to advance responsible financial solutions and systems. The Center for Financial Inclusion, an independent think tank housed at Accion, focuses on consumer protection, women’s economic inclusion, data risks and opportunities, and climate</p>
+            </div>
+        </section>
+
+        
+        <section class="background-section" style="background-image: url('images/history2.jpg'); justify-content: center; flex-direction: column;" >
+            <div class="content" style="text-align: center;"> 
+                <h5>Our History</h5>           
+                <p>“We adapt our work to meet the most urgent challenges, opening pathways to a brighter, more resilient future.”</p>
+                <p style="font-size: 1em;">For more than 14 years, we have led the way in inclusive finance, shaping an industry that now benefits hundreds of millions of people worldwide.</p>
+                <button id="expand-btn">Expand & Explore</button>
+            </div>
+            <div class="aim-content">
+            <div class="content-container">
+                <div id="extra-content" class="extra-content" style="color: white;">
+                    <h3>Full Information</h3>
+                    <p>This is the full content that will appear after you click the "Expand & Explore" button. You can add additional text, images, or any other content here. It will seamlessly appear on the same page without navigating away.</p>
+                
+                <div class="image-column">
+                    <img src="images/history1.jpg" alt="">
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="career-section">
+            <h2>Join Our Team</h2>
+            <p>
+                The Bank seeks to employ talented individuals whose creativity and imagination will support and contribute to achieving the Bank’s business objectives.
+                <br></br>
+                We value diversity, and assure equal employment opportunity and a workplace where relationships are based on mutual respect. We treat all our employees in a professional, non-discriminatory manner; providing safe, effective working conditions and competitive terms and conditions in our workplace.
+                <br></br>
+                Please contact info@stb.com
+
+
+            </p>
+          </section>
+
+        <div class="background-box">
+            <div class="h3-container">
+                <div class="h3-box" onclick="toggleParagraph(0)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Mission Statement</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    Our mission is to provide accessible financial solutions to individuals, small businesses, and communities, 
+                    enabling them to improve their quality of life and build sustainable futures. By promoting financial literacy, 
+                    providing loans, savings, and other banking services, we strive to bridge the gap for those who are often 
+                    excluded from traditional banking systems.
+                  </p>
+                  <div class="h3-box" onclick="toggleParagraph(1)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Vision</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    To be the leading microfinance institution that transforms lives and communities through financial inclusion and 
+                    economic empowerment. We envision a world where every individual has the opportunity to prosper, regardless of 
+                    their economic background.
+                  </p>
+                  <div class="h3-box" onclick="toggleParagraph(2)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Core Values</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    <b style="font-size: large;">Empowerment</b>: We are committed to empowering individuals and businesses with the financial 
+                    tools and knowledge they need to succeed.
+                    <br></br>
+                    <b style="font-size: large;">Integrity</b>: We operate with transparency, honesty, and accountability, ensuring 
+                    that our clients’ trust is at the core of everything we do.
+                    <br></br>
+                    <b style="font-size: large;">Community-Centric</b>: Our focus is on building strong, resilient communities by 
+                     financial products that cater to local needs.
+                    <br></br>
+                    <b style="font-size: large;">Sustainability</b>: We aim to create long-term value for our clients and 
+                    stakeholders by promoting responsible lending, financial education, and social impact.
+                  </p>
+                  <div class="h3-box" onclick="toggleParagraph(3)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>What We Offer</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    <b style="font-size: large;">Personal Banking</b>: Savings accounts, loans, and financial advice designed to 
+                    help individuals manage their money, plan for the future, and meet their personal goals.
+                    <br></br>
+                    <b style="font-size: large;">Corporate Banking</b>: Customized banking solutions for small and medium-sized 
+                    enterprises (SMEs), providing them with access to loans, savings, and advisory services to foster business growth.
+                    <br></br>
+                    <b style="font-size: large;">Financial Literacy and Education</b>: We believe in empowering our clients with 
+                    knowledge. Our financial education programs help individuals and businesses make informed decisions and build 
+                    a secure financial future.
+                  </p>
+                  <div class="h3-box" onclick="toggleParagraph(4)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Why Choose Us?</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    Access to Financial Services: We make banking accessible for everyone, especially for those who have been excluded 
+                    from traditional banking systems.
+                    <br></br>
+                    Affordable and Flexible Products: We offer competitive interest rates, low fees, and flexible repayment terms to 
+                    ensure our services are affordable and practical.
+                    <br></br>
+                    Commitment to Community: Every service we provide is designed to support community growth and development. Your 
+                    financial success helps drive collective prosperity.
+                    <br></br>
+                    Personalized Approach: We listen to your needs and work with you to develop financial solutions that suit your 
+                    life or business.
+                  </p>
+                  <div class="h3-box" onclick="toggleParagraph(5)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Our Impact</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    Since our founding, we have made significant strides in supporting the growth of individuals and businesses 
+                    within our community. We’ve provided thousands of loans, helped people start and grow businesses, supported 
+                    local initiatives, and educated countless individuals about managing money and building wealth.
+                    <br></br>
+                    At STMB, your financial success is our success, and we are proud to be part of your journey.
+                  </p>    
+
+            </div>
+          </div>
+
+          <!-- Section with 3 divs -->
+<section class="three-div-section">
+    <div class="box">
+        <p>About<p>
+        <h4><a href="">STB Microfinance Bank</a></h4>
+    </div>
+    <div class="box">
+        <p>Need and help<p>
+        <h4><a href="">Read our FAQ'S</a></h4>
+    </div>
+    <div class="box">
+        <p>Contact Us<p>
+        <a href="">info@stb.com</a>
+    </div>
+</section>
+            
+    </main>
+    
+    <div id="footer"></div>
+
+    <script>
+        // Get the button and extra content element
+        const expandButton = document.getElementById('expand-btn');
+        const extraContent = document.getElementById('extra-content');
+
+        // When the user clicks the "Expand & Explore" button, toggle the visibility of the extra content
+        expandButton.addEventListener('click', function() {
+        // Add class 'expanded' to the extra content to reveal it
+        extraContent.classList.add('expanded');
+    
+        // Hide the "Expand & Explore" button after clicking
+        expandButton.style.display = 'none';
+        });
+    </script>
+
+<script>
+    function toggleParagraph(index) {
+// Get all the paragraphs
+const paragraphs = document.querySelectorAll('.hidden-paragraph');
+
+// Toggle the visibility of the corresponding paragraph
+const paragraph = paragraphs[index];
+paragraph.classList.toggle('show-paragraph');
+}
+</script> 
+
+    <script src="script.js"></script>
+
+    <script>
+        $('#header').load('header.html')
+        $('#footer').load('footer.html')
+    </script>
+</body>
+</html>

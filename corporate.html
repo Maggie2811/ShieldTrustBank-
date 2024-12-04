@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="image-section">
+            <img src="images/stb_Coporate.jpg" alt="Microfinance Bank" class="section-image">
+        </section>
+        <div class="container-about">
+            <h1>Corporate Banking</h1>
+            <p> At Shield Trust Microfinance Bank, we provide businesses of all sizes with the financial tools and support they need to succeed. 
+                Whether you're a startup looking for funding or a large enterprise managing complex cash flows, our comprehensive 
+                range of services is designed to help you thrive.
+            </p>
+            <p> From business checking and savings accounts to tailored financing solutions, merchant services, and treasury management, 
+                we offer a full suite of products to streamline your financial operations. Our advanced digital banking tools ensure 
+                you have control over your accounts, anytime and anywhere, while our dedicated relationship managers provide personalized 
+                service to help you achieve your business goals.
+            </p>
+            <p> We pride ourselves on understanding the unique needs of businesses across industries, including manufacturing, retail, 
+                healthcare, and technology. Our innovative solutions, combined with a global network of services, make us the trusted 
+                partner for businesses looking to grow and succeed in an ever-changing marketplace.
+            </p>
+            <p> Partner with STMB today and experience the difference that a dedicated, tech-driven, and customer-focused 
+                corporate banking partner can make.
+            </p>
+        </div>
+        <div class="container-delivering2">
+            <div class="text-box2" id="section2">
+                <div class="text">
+                    <h2>CORPORATE BANKING ACCOUNT OPENING FORM</h2>
+                    <p>
+                        To open a Corporate account with FCMB Bank (UK) Limited, please click here.
+                    </p>
+                    <BUtton class="btn"><h5><a href="#">OPEN NOW</a></h5></BUtton>
+                </div>
+            </div>
+            <div class="image2">
+                <img src="images/corporate man picture.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="background-box">
+            <div class="h3-container">
+                <div class="h3-box" onclick="toggleParagraph(0)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Cash Management Services</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    We can offer multicurrency (USD, GBP, EUR) deposit accounts with fixed terms or notice periods of 32/64/95 
+                    days which yield attractive interest rates.
+                  </p>
+                  <div class="h3-box" onclick="toggleParagraph(1)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Medium Term Loans</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    We can consider providing funding for periods in excess of one year to finance the acquisition of 
+                    fixed assets such as plant & machinery to be deployed in larger projects.  We can offer the flexibility 
+                    of a choice of currency to hedge mismatched exposures & the ability to stagger drawdown in order to 
+                    mirror the profile of the investment in the underlying project.
+                    <br></br>
+                    In conjunction with our colleagues in Nigeria we are also able to support larger projects in West Africa 
+                    through the provision of Advisory services and Project Finance across a wide range of sectors including 
+                    Oil & Gas, Telecommunications, Power Generation, Renewable Energy, General Manufacturing, FMCG, Real Estate, 
+                    Agriculture, Steel & Cement.
+                  </p>
+                  <div class="h3-box" onclick="toggleParagraph(2)">
+                    <button class="play-btn">&#9654;</button> <!-- Play Button (▶) -->
+                    <h3>Short Term Working Capital Finance</h3>
+                  </div>
+                  <p class="hidden-paragraph">
+                    We are able to offer short term, multicurrency (USD, GBP, EUR) loans and overdrafts to assist our 
+                    clients in financing their working capital needs more effectively. These can be utilized to smooth 
+                    clients’ cash-flows, allowing more flexibility to react to the commercial demands of their businesses. 
+                    In conjunction with our Trade Finance and Treasury teams we can also assist in accelerating trade receipts 
+                    and hedging the related currency and interest rate risks.
+                    <br></br>
+                    Our clients are also often required to have a bank underwrite their contractual obligations through the 
+                    issuance of Guarantees and Bonds on their behalf. We have considerable experience of this activity and 
+                    understand the importance of tailoring the wording of our Guarantees to provide the appropriate support 
+                    for our clients’ activities in either Europe of West Africa using our specialized knowledge of these regions.
+                    <br></br>
+                    We are in a position to issue Bid Bonds, Advance Payment Guarantees, Performance Guarantees, Retention 
+                    Guarantees, Customs Bonds & Standby Letters of Credit.
+                  </p>
+                  
+            </div>
+          </div>      
+        <!-- Section with 3 divs -->
+<section class="three-div-section">
+    <div class="box">
+        <p>About<p>
+        <h4><a href="">STB Microfinance Bank</a></h4>
+    </div>
+    <div class="box">
+        <p>Need and help<p>
+        <h4><a href="">Read our FAQ'S</a></h4>
+    </div>
+    <div class="box">
+        <p>Contact Us<p>
+        <a href="">info@stb.com</a>
+    </div>
+</section>
+        
+    </main>
+
+    
+    
+        
+        
+        
+        
+        
+        </p>
+
+        <div id="footer"></div>
+
+        <script>
+            function toggleParagraph(index) {
+  // Get all the paragraphs
+  const paragraphs = document.querySelectorAll('.hidden-paragraph');
+  
+  // Toggle the visibility of the corresponding paragraph
+  const paragraph = paragraphs[index];
+  paragraph.classList.toggle('show-paragraph');
+}
+        </script>
+
+        <script>
+            $('#header').load('header.html')
+            $('#footer').load('footer.html')
+        </script>
+</body>
+</html>

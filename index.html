@@ -4,29 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShieldTrust Bank</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/shieldtrust.png" alt="" width="40px">
-            </div>
-            <ul class="nav-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Corporate Banking</a></li>
-                <li><a href="">Treasury</a></li>
-                <li><a href="">Personal & Business Banking</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="" class="cta-btn">Internet Banking</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
+    
     <main>
         <section class="hero">
-            <img src="images/office building.jpg" alt="" width="100%">
+            <img src="images/office building.jpg" alt="">
             <div class="text-overlay">
                 <h2> Empowering Your Financial Future </h2>
                 <p> We are committed to providing financial services that empower low-income individuals, families, and small 
@@ -76,19 +66,179 @@
             <p><a href="">Other Initiatives</a></p>
         </div>
     </section>
-    </main>
 
-    <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
+<section class="aim">
+    <div class="head">
+        <h1> Our Team Delivering</h1>
     </div>
-    <p>&copy; 2024 Microfinance Bank | All Rights Reserved</p>
-  </footer>
-  
+
+    <div class="container-delivering">
+        <div class="image">
+            <img src="images/stb_About.webp" alt="">
+        </div>
+        <div class="text-box" id="section1">
+            <div class="text">
+                <h2>ABOUT STB Bank</h2>
+                <p>STB Bank is a forward-thinking microfinance institution dedicated to providing affordable, accessible, and 
+                    sustainable financial services to underserved individuals, small businesses, and entrepreneurs.
+                 </p>
+                 <BUtton class="btn"><h5><a href="#">ABOUT OUR BANK</a></h5></BUtton>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-delivering2">
+        <div class="text-box2" id="section2">
+            <div class="text">
+                <h2>CORPORATE BANKING</h2>
+                <p>
+                    At STB, we provide businesses of all sizes with the financial tools and support they need 
+                    to succeed. Whether you're a startup looking for funding or a large enterprise managing complex 
+                    cash flows, our comprehensive range of services is designed to help you thrive.
+                </p>
+                <BUtton class="btn"><h5><a href="#">DISCOVER</a></h5></BUtton>
+            </div>
+        </div>
+        <div class="image2">
+            <img src="images/stb_Coporate.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="container-delivering">
+        <div class="image">
+            <img src="images/stb_Treasury.png" alt="">
+        </div>
+        <div class="text-box" id="section3">
+            <div class="text">
+                <h2>TREASURY</h2>
+                <p>
+                    Our Treasury department team is at the heart of ensuring the bank's financial 
+                    health, enabling us to support micro-enterprises and underserved communities.
+                </p>
+                 <BUtton class="btn"><h5><a href="#">READ MORE</a></h5></BUtton>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-delivering2">
+        <div class="text-box2" id="section4">
+            <div class="text">
+                <h2>PERSONAL AND BUSINESS BANKING</h2>
+                <p>
+                    Our Personl & Business Banking team , are committed to providing affordable, accessible, and personalized 
+                    banking solutions to both individuals and small businesses, supporting small businesses is at the heart of what we do.
+                </p>
+                 <BUtton class="btn"><h5><a href="#">DISCOVER MORE</a></h5></BUtton>
+            </div>
+        </div>
+        <div class="image2">
+            <img src="images/stb_Personal.webp" alt="">
+        </div>
+    </div>
+</section>
+
+<!---->
+<div class="contain">
+    <div class="contents-wraper">
+        <section class="header">
+            <h2>Testimonials</h2>
+        </section>
+        <section class="testRow">
+            <div class="testItem active"> 
+                <img src="image/people1.jfif" alt="">      
+                <p>
+                    "I was struggling to get access to traditional loans due to my lack of credit history, but ShieldTrust 
+                    took the time to understand my situation. The loan process was simple, and they offered me a low-interest rate, 
+                    making it easy to repay. Thanks to their support, I’ve been able to grow my business and provide a better future 
+                    for my family. I’m so grateful for their services and the financial empowerment they’ve provided me." 
+                </p>
+                <h3>Mr John.M </h3>
+                <h4>Small Business Owner</h4>
+            </div>  
+
+            <div class="testItem"> 
+                <img src="image/people1.jfif" alt="">      
+                <p>
+                    "Working at STB has been an incredibly rewarding experience. The organization is deeply committed 
+                    to making a positive impact on the community, and it’s inspiring to see firsthand how our services 
+                    help empower individuals and small businesses. The team fosters a supportive environment, where we’re 
+                    all dedicated to helping our clients succeed. It’s fulfilling to be part of a company that values both 
+                    its customers and its employees."
+                </p>
+                <h3 class="name">Mr Andrew.H</h3>
+                <h4 class="job">Loan Offficer</h4>
+            </div>
+
+            <div class="testItem"> 
+                <img src="image/people1.jfif" alt="">      
+                <p>
+                    "As a woman entrepreneur in a rural area, finding financial support is always a challenge. STB 
+                    has been a game-changer for me. They offered me a loan to buy equipment for my farm, and their staff 
+                    were always available to answer my questions and provide guidance. The flexibility in repayments and 
+                    the interest rates were also very reasonable, making it easier for me to keep my business running smoothly." 
+                </p>
+                <h3>Mrs Doe</h3>
+                <h4>Agricultural Entrepreneur</h4>
+            </div>
+
+            <div class="testItem"> 
+                <img src="image/people1.jfif" alt="">      
+                <p>
+                    "The work culture here at ShieldTrust is like no other. It’s a place where innovation 
+                    meets compassion. I’m constantly inspired by the team’s commitment to financial inclusion and their 
+                    dedication to helping clients reach their full potential. The leadership genuinely values both the 
+                    personal and professional growth of its employees, making it a fulfilling place to work."
+                </p>
+                <h3>Miss Joy</h3>
+                <h4>staff</h4>
+            </div>  
+            <div class="testItem"> 
+                <img src="image/people1.jfif" alt="">      
+                <p>
+                    "I can’t thank ShieldTrust enough for their help during tough times. I needed urgent 
+                    capital to keep my shop open during the pandemic, and they responded quickly with a loan that helped 
+                    me maintain my inventory and keep my employees on board. The customer service was exceptional — they 
+                    understood my needs and provided me with a solution that worked." 
+                </p>
+                <h3>Mr D.</h3>
+                <h4>Retail Business Owner</h4>
+            </div>       
+        </section>
+            
+        <section class="indicators">
+            <div class="dot active" attr="0" onclick="switchTest(this)"></div>
+            <div class="dot" attr="1" onclick="switchTest(this)"></div>
+            <div class="dot" attr="2" onclick="switchTest(this)"></div>
+            <div class="dot" attr="3" onclick="switchTest(this)"></div>
+            <div class="dot" attr="4" onclick="switchTest(this)"></div>
+        </section>
+    </div>
+</div>
+
+<!-- Section with 3 divs -->
+<section class="three-div-section">
+    <div class="box">
+        <p>About<p>
+        <h4><a href="">STB Microfinance Bank</a></h4>
+    </div>
+    <div class="box">
+        <p>Need and help<p>
+        <h4><a href="">Read our FAQ'S</a></h4>
+    </div>
+    <div class="box">
+        <p>Contact Us<p>
+        <a href="">info@stb.com</a>
+    </div>
+</section>
+</main>
+
+<!--footer--> 
+<div id="footer"></div>
+  <script src="script.js"></script>
+
+  <script>
+    $('#header').load('header.html')
+    $('#footer').load('footer.html')
+</script>
 </body>
 </html>

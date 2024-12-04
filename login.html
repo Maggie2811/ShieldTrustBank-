@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+    <!-- Login Form -->
+    <section class="createForm">
+        <div class="container">
+            <div class="">
+                <img src="images/shieldtrust.png" alt="" width="70px">
+            </div>
+            <h2>Login</h2>
+            <form action="#" id="loginForm" method="POST">
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="loginEmailError"></div>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error" id="loginPasswordError"></div>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="note">
+                <hr>
+                <h3>Your Privacy is Important to Us</h3>
+            <p>Please never share your password with anyone. Make it a habit to change your password regularly. Do not access this portal on a shared system.
+
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Left side with social media icons (Facebook, Instagram) -->
+        <div class="footer-left">
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <!-- Right side with bank name, Know More, and Contact links -->
+        <div class="footer-right">
+          <span class="bank-name">&#169; 2024 STMB Bank.<a href="/know-more" class="footer-link"> Know More</a>        
+            <a href="/contact" class="footer-links">Contact</a>
+          </span>
+        </div>
+      </footer>
+ 
+ </body>
+</html>
